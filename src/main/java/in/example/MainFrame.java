@@ -7,7 +7,9 @@ public class MainFrame extends JFrame {
        this.setTitle("坦克大战");
        JMenuBar menuBar = new JMenuBar();//创建菜单栏
        JMenu jMenu = new JMenu("游戏");//创建菜单
-       menuBar.add(jMenu);//将菜单栏添加到
+       menuBar.add(jMenu);//将菜单栏添加到菜单栏当中
+       this.setJMenuBar(menuBar);//将菜单栏显示出来
+       this.add(new GamePanel());
 
        this.setSize(680, 520);//设置面板大小
        this.setResizable(false);//设置不可重置大小
